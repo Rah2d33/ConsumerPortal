@@ -1,43 +1,96 @@
 ﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+
+/* General styles for the top navigation */
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
-a {
-  color: #0077cc;
+
+
+/* Vertical Navigation Styling */
+.sidebar {
+    position: fixed;
+    top: 3.7rem;
+    left: 0.003rem; /* Aligns the sidebar to the left edge */
+    bottom: 3.8rem; /* Extend to the bottom of the viewport */
+    z-index: 1000; /* Ensures it's above other content */
+    padding: 2rem 0.5rem;
+    width: 200px; /* Default width for larger screens */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+    background-color: #333; /* Background color of the sidebar */
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+/* Sticky sidebar */
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px); /* Full height minus the top margin */
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+/* Responsive adjustments */
+@media (max-width: 1024px) { /* For laptops */
+    .sidebar {
+        width: 180px; /* Adjust width for laptops */
+        padding: 30px 8px; /* Adjust padding for laptops */
+    }
 }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+@media (max-width: 768px) { /* For tablets and smaller devices */
+    .sidebar {
+        width: 150px; /* Adjust width for tablets */
+        padding: 20px 6px; /* Adjust padding for tablets */
+    }
 }
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+@media (max-width: 480px) { /* For mobile devices */
+    .sidebar {
+        width: 100%; /* Full width for mobile */
+        padding: 10px 0; /* Adjust padding for mobile */
+        top: 0; /* Sidebar starts at the top of the viewport */
+        bottom: 0; /* Sidebar extends to the bottom of the viewport */
+    }
+
+    .sidebar-sticky {
+        height: auto; /* Allow sidebar to fit content on mobile */
+    }
 }
+
+/* Ensure content is not covered by the sidebar */
+body {
+    margin-left: 200px; /* Default margin for larger screens */
+}
+
+@media (max-width: 1024px) { /* For laptops */
+    body {
+        margin-left: 180px; /* Adjust margin for laptops */
+    }
+}
+
+@media (max-width: 768px) { /* For tablets and smaller devices */
+    body {
+        margin-left: 150px; /* Adjust margin for tablets */
+    }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+    body {
+        margin-left: 0; /* No margin for mobile, sidebar spans full width */
+    }
+}
+
+
+/* Adjustments for _Greeting positioning */
+/*.greeting {
+    margin-left: 200px;*/ /* Ensure this matches the sidebar width or adjust accordingly */
+    /*padding: 10px;
+}*/
 
 .footer {
   position: absolute;
@@ -45,4 +98,5 @@ button.accept-policy {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+  text-align:center;
 }

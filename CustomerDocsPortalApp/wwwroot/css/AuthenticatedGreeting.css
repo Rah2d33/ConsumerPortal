@@ -1,0 +1,10 @@
+﻿/* Typography */
+.text-center h1 {
+    font-size: 2.6rem;
+    font-weight: lighter;
+    color: #FFCD00;
+    margin: 0;
+    padding: 2.2rem 5.7rem;
+    font-family: 'Arial Rounded MT';
+    text-align: left;
+}

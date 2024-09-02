@@ -1,0 +1,9 @@
+﻿@{
+    var currentTime = DateTime.Now;
+    var greeting = currentTime.Hour < 12 ? "Good morning" : currentTime.Hour < 18 ? "Good afternoon" : "Good evening";
+    var userName = User?.Identity?.Name ?? "Guest"; // Null-coalescing operator to handle null values
+}
+
+<div class="text-center mb-4">
+    <h1>@greeting, @userName!</h1>
+</div>
