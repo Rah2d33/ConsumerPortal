@@ -20,6 +20,11 @@ namespace CustomerDocsPortalApp.Controllers
             return View();
         }
 
+        public IActionResult Invoices()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
