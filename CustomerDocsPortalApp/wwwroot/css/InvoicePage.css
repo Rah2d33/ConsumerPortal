@@ -1,5 +1,4 @@
-﻿/* Typography */
-.text-center h1 {
+﻿.Invoices {
     font-size: 2.6rem;
     font-weight: lighter;
     color: #a9cea2;
@@ -8,6 +7,3 @@
     font-family: 'Arial Rounded MT';
     text-align: left;
 }
-
-
-/*Typewriter*/
