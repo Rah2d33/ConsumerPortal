@@ -1,4 +1,6 @@
 ﻿/* Typography */
+
+/* Apply the blinking effect to the h1 element */
 .text-center h1 {
     font-size: 2.6rem;
     font-weight: lighter;
@@ -7,7 +9,9 @@
     padding: 2.2rem 5.7rem;
     font-family: 'Arial Rounded MT';
     text-align: left;
+    animation: blink 1s step-start infinite; /* Adjust the duration and step to your preference */
 }
+
 
 
 /*Typewriter*/

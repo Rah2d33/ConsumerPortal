@@ -42,7 +42,7 @@ body {
 .sidebar .nav-link {
     color: #F2F2F2; /* Static text color */
     text-decoration: none; /* Remove underline from links */
-    padding: 1rem 2.2rem; /* Add padding for better spacing */
+    padding: 1rem 1.5rem; /* Add padding for better spacing */
     border-radius: 0.25rem; /* Optional: rounded corners for links */
     display: flex; /* Use flexbox for alignment */
     align-items: center; /* Vertically align items */
