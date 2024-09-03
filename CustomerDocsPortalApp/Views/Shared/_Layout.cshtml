@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Index.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CustomerDocsPortalApp.styles.css" asp-append-version="true" />
+   
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/css/IOco2.png" height="30rem" width="90%" alt="Logo" class="nav-logo" />
+                    @* <img src="~/css/IOco2.png" height="30rem" width="90%" alt="Logo" class="nav-logo" /> *@
                 </a>
                 <partial name="_LoginPartial" />
             </div>
@@ -30,15 +31,15 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">
                                 <span data-feather="home"></span>
-                                Home
+                                <img src="/Images/icons8-home-48.png" alt="Home" class="nav-icon"> Home
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Invoices">
                                 <span data-feather="file"></span>
-                                Saved Invoices
+                                <img src="/Images/icons8-document-94.png" alt="Invoices" class="nav-icon"> Invoices
                             </a>
                         </li>
                     </ul>
@@ -65,3 +66,8 @@
 </body>
 
 </html>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+

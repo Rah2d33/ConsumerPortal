@@ -8,7 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\css\IOco2.png" />
+    <None Include="wwwroot\Images\IOco2.png" />
+    <None Include="wwwroot\Images\Gear.gif" />
+    <None Include="wwwroot\Images\i5.png" />
+    <None Include="wwwroot\Images\icons8-add-file-50.png" />
+    <None Include="wwwroot\Images\icons8-binoculars-94.png" />
+    <None Include="wwwroot\Images\icons8-home-48.png" />
+    <None Include="wwwroot\Images\icons8-password-key-94.png" />
+    <None Include="wwwroot\Images\icons8-search-94.png" />
+    <None Include="wwwroot\Images\icons8-test-94.png" />
+    <None Include="wwwroot\Images\icons8-unlock-94.png" />
+    <None Include="wwwroot\Images\icons8-view-94 %281%29.png" />
+    <None Include="wwwroot\Images\icons8-view-94.png" />
+    <None Include="wwwroot\Images\iOCO3.png" />
+    <None Include="wwwroot\Images\iOco4.png" />
+    <None Include="wwwroot\Images\ioCOpic.png" />
+    <None Include="wwwroot\Images\numbers-13513_128.gif" />
+    <None Include="wwwroot\Images\output-onlinegiftools %281%29.gif" />
   </ItemGroup>
 
   <ItemGroup>
