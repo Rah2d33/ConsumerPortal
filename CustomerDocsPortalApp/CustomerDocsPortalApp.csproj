@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\InvoicePage.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\InvoicePage.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\Images\IOco2.png" />
     <None Include="wwwroot\Images\Gear.gif" />
     <None Include="wwwroot\Images\i5.png" />
@@ -25,6 +33,7 @@
     <None Include="wwwroot\Images\ioCOpic.png" />
     <None Include="wwwroot\Images\numbers-13513_128.gif" />
     <None Include="wwwroot\Images\output-onlinegiftools %281%29.gif" />
+    <None Include="wwwroot\js\InvoicePage.js" />
   </ItemGroup>
 
   <ItemGroup>

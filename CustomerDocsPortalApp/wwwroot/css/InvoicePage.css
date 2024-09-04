@@ -3,7 +3,273 @@
     font-weight: lighter;
     color: #a9cea2;
     margin: 0;
-    padding: 2.2rem 5.7rem;
+    padding: 2.2rem 2.5rem;
     font-family: 'Arial Rounded MT';
     text-align: left;
 }
+
+/*===================================================*/
+
+/*filter*/
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+#filterInput {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Space between input and icon */
+    flex-grow: 1; /* Takes up available space */
+}
+
+.filter-icon {
+    font-size: 20px; /* Adjust size as needed */
+    color: #0B3040; /* Adjust color as needed */
+    cursor: pointer;
+}
+
+    .filter-icon:hover {
+        color: #6CB2B0; /* Color change on hover */
+    }
+
+
+
+
+/*============================*/
+/* General table styling */
+.table-container {
+    width: 116.4%; /* Ensure the container takes up the full width of the page */
+    margin: 0; /* Remove any margin to allow the container to extend fully */
+    padding: 0 30px; /* Add padding on the left and right to shift the table to the right */
+    overflow-x: auto; /* Enable horizontal scrolling if the table overflows */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.table {
+    width: 100%; /* Ensure the table takes up the full width of the container */
+    border-collapse: collapse; /* Collapse borders between cells */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.table th, .table td {
+    padding: 15px 20px; /* Increase padding for better spacing */
+    border-bottom: 1px solid #ddd; /* Border between rows */
+}
+
+.table th {
+    font-weight: bold;
+    background-color: #F2F2F2; /* Light background for headers */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row colors for readability */
+}
+
+/* Example cell styling to demonstrate badges */
+.table tbody tr td.position, .table tbody tr td.role {
+    padding: 5px 10px;
+}
+
+/* Adjust the font style for specific columns */
+.table th, .table td {
+    font-family: Arial Rounded MT Bold, sans-serif;
+    color: #0B3040; /* Text color for table content */
+}
+
+/* Extend table headers to the full width of the page */
+.table th {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Table Container Style with bottom scroller*/
+/*.table-container {
+    display: none;*/ /* Initially hidden */
+    /*opacity: 0;*/ /* Initially invisible */
+    /*overflow-y: auto;*/ /* Adds a scroll to the table container */
+    /*max-height: calc(100vh - 400px);*/ /* Adjusts based on other content; change as needed */
+    /*margin-top: 0px;*/ /* Space from other elements above */
+    /*padding: 10px 0 10px 20px;*/ /* Adjusted padding to move the table to the right */
+    /*transition: opacity 0.3s ease, display 0s linear 0.3s;*/ /* Smooth transition for opacity */
+    /*width: 100%;*/ /* Adjusted to fit within the container */
+    /*height: calc(100% - 80px);*/ /* Adjusted to account for header height */
+    /*overflow: auto;*/ /* Allows scrolling if the content overflows */
+    /*padding-top: 0rem;*/ /* Additional padding, optional */
+/*}*/
+
+/* Table Styles */
+/*.table {
+    width: 100%;
+    border-collapse: collapse;*/ /* Ensures borders do not overlap */
+    /*font-family: 'Arial Rounded MT', Arial, sans-serif;*/ /* Modern rounded font */
+    /*color: #0B3040;*/ /* Text color */
+    /*margin-left: 20px;*/ /* Moves the table slightly to the right */
+/*}*/
+
+    /* Header styles */
+    /*.table thead th {
+        padding: 13px;*/ /* Increase padding for bigger rows */
+        /*text-align: left;
+        color: #0B3040;
+        font-weight: bold;
+    }*/
+
+        /* Bottom border style for table headers */
+        /*.table thead th.header-bottom-border {
+            border-bottom: 2px solid #FFCD00;*/ /* Bottom border with the specified color */
+        /*}*/
+
+    /* Body styles */
+    /*.table tbody td {
+        padding: 12.3px;*/ /* Increase padding for bigger rows */
+        /*text-align: left;
+        border: 1px solid rgba(11, 48, 64, 0.1);*/ /* Slight border for rows and columns */
+        /*color: #0B3040;*/ /* Default text color */
+    /*}*/
+
+    /* Alternating row colors */
+    /*.table tbody tr:nth-child(odd) {
+        background-color: rgba(242, 242, 242, 0.5);*/ /* 50% opacity for odd rows */
+    /*}
+
+    .table tbody tr:nth-child(even) {
+        background-color: transparent;*/ /* Color for even rows */
+    /*}*/
+
+/* No Files Message */
+/*.no-files-row td {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.table-container {
+    width: 113.5%;
+    height: 200%;
+    overflow: auto;*/ /* Enables both vertical and horizontal scrolling */
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 40px;*/ /* Adds some padding around the table */
+    /*box-sizing: border-box;
+
+}
+
+#invoicesTable {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 1200px;*/ /* Ensures the table takes up enough width to cause horizontal scrolling */
+    /*background-color: #fff;*/
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/ /* Adds a subtle shadow for depth */
+    /*border-radius: 5px;*/ /* Rounds the corners of the table */
+    /*overflow: hidden;*/ /* Ensures rounded corners apply to the whole table */
+/*}
+
+    #invoicesTable th, #invoicesTable td {
+        padding: 15.5px;
+        text-align: left;
+        border-bottom: 1px solid #e0e0e0;*/ /* Light gray bottom border */
+    /*}
+
+    #invoicesTable th {*/
+        /*background-color: #F2F2F2;*/
+        /*color: #0B3040; 
+        text-transform: none; 
+        font-weight: bold;
+        font-size: 14px;
+    }*/
+
+    /*#invoicesTable td {
+        font-size: 14px;*/ /* Larger font size */
+        /*color: #333333;
+        padding: 15px;*/ /* Increased padding for larger cells */
+        /*min-width: 150%;*/ /* Ensure each cell is wide enough */
+    /*}*/
+
+
+    /*#invoicesTable tbody tr:hover {*/
+        /*background-color: #f2f2f2;*/ /* Light gray hover effect */
+        /*cursor: pointer;*/ /* Change cursor to pointer on hover */
+    /*}*/
+
+/*.no-data {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: transparent;*/ /* Keeps the header background consistent */
+/*}*/
+
