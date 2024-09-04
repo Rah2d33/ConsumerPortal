@@ -1,6 +1,11 @@
 ﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+/* Styles for the header navigation bar */
+.navbar {
+    background-color: white !important;
+}
+
 
 /* General styles for the top navigation */
 .navbar-brand {
@@ -10,11 +15,14 @@ for details on configuring this project to bundle and minify static web assets. 
 
 }
 
+
+
+
 /* Vertical Navigation Styling */
 /* Vertical Navigation Styling */
 .sidebar {
     position: fixed;
-    top: 3.55rem;
+    top: 3.95rem;
     left: 0.02rem; /* Aligns the sidebar to the left edge */
     bottom: 3.8rem; /* Extend to the bottom of the viewport */
     z-index: 1000; /* Ensures it's above other content */
@@ -101,6 +109,7 @@ for details on configuring this project to bundle and minify static web assets. 
 
 .footer {
     position: absolute;
+    color: #ffffff !important; /* Set text color to white */
     bottom: 0;
     width: 100%;
     white-space: nowrap;
@@ -108,3 +117,12 @@ for details on configuring this project to bundle and minify static web assets. 
     text-align: center;
     background-color: #0B3040;
 }
+
+    .footer a {
+        color: #ffffff !important; /* Set link color to white */
+        text-decoration: underline; /* Optional: to keep the link distinguishable */
+    }
+
+        .footer a:hover {
+            color: #f0f0f0 !important; /* Optional: slightly lighter color on hover */
+        }

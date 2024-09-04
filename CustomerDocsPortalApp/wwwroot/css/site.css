@@ -23,10 +23,24 @@ body {
 
 /*=====================================================================================================*/
 
+/* Styles for the header navigation bar */
+
+
+
+       /* .navbar .navbar-nav a, .navbar .nav-link a, .navbar .form-inline a {
+            color: #ffffff !important;   
+        }*/
+
+.navbar .navbar-nav a:hover, .navbar .nav-link a:hover, .navbar .form-inline a:hover {
+    color: #6CB2B0 !important;
+}
+
+
+
 .navbar-brand {
-    width: 110px;
-    height: 35px;
-    background-image: url('/Images/IOco2.png');
+    width: 120px;
+    height: 45px;
+    background-image: url('/Images/i5.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -66,15 +80,15 @@ body {
 
 
     /* Styling for active navigation link */
-    .sidebar .nav-link.active {
-        color: #a9cea2 !important; /* Text color for the active link */
-    }
+.sidebar .nav-link.active {
+    color: #6CB2B0 !important; /* Text color for the active link */
+}
 
     /* Styling for navigation link on hover */
-    .sidebar .nav-link:hover {
-        color: #a9cea2; /* Text color on hover */
-        background-color: transparent; /* No background color on hover */
-    }
+.sidebar .nav-link:hover {
+    color: #6CB2B0; /* Text color on hover */
+    background-color: transparent; /* No background color on hover */
+}
 
 
 
