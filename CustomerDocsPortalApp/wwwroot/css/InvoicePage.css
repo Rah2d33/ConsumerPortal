@@ -1,7 +1,7 @@
 ﻿.Invoices {
     font-size: 2.6rem;
     font-weight: lighter;
-    color: #a9cea2;
+    color: #6CB2B0;
     margin: 0;
     padding: 2.2rem 2.5rem;
     font-family: 'Arial Rounded MT';
@@ -56,17 +56,20 @@
     font-family: Arial, sans-serif;
     font-size: 14px;
     text-align: left;
+    
 }
 
 .table th, .table td {
     padding: 15px 20px; /* Increase padding for better spacing */
     border-bottom: 1px solid #ddd; /* Border between rows */
+
 }
 
-.table th {
-    font-weight: bold;
-    background-color: #F2F2F2; /* Light background for headers */
-}
+    .table th {
+        font-weight: bold;
+        color: #F2F2F2!important;
+            background-color: #0B3040; /* Light background for headers */
+    }
 
 .table tbody tr:nth-child(even) {
     background-color: #f9f9f9; /* Alternate row colors for readability */
@@ -78,10 +81,10 @@
 }
 
 /* Adjust the font style for specific columns */
-.table th, .table td {
-    font-family: Arial Rounded MT Bold, sans-serif;
-    color: #0B3040; /* Text color for table content */
-}
+    .table th, .table td {
+        font-family: Arial Rounded MT Bold, sans-serif;
+        color: #0B3040; /* Text color for table content */
+    }
 
 /* Extend table headers to the full width of the page */
 .table th {
