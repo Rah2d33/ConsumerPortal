@@ -29,7 +29,7 @@ for details on configuring this project to bundle and minify static web assets. 
     padding: 1.7rem 0.6px 0px 16px;
     vertical-align: auto;
     text-align: center;
-    width: 215px; /* Default width for larger screens */
+    width: 225px; /* Default width for larger screens */
     background: linear-gradient(to top, #F2F2F2, #F2F2F2, #F2F2F2); /* Gradient background */
     /* Remove right border */
     box-shadow: none; /* Removes the inset shadow */

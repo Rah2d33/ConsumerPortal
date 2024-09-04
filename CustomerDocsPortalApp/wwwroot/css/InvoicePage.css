@@ -14,8 +14,9 @@
 
 .filter-container {
     display: flex;
-    align-items: center;
+    align-items: end;
     margin-bottom: 20px; /* Adjust spacing as needed */
+
 }
 
 #filterInput {
@@ -31,6 +32,7 @@
     font-size: 20px; /* Adjust size as needed */
     color: #0B3040; /* Adjust color as needed */
     cursor: pointer;
+    
 }
 
     .filter-icon:hover {
