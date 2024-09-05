@@ -4,36 +4,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
 }
 
-<h1 class="Invoices"> Invoices</h1>
+<h1 class="Invoices">Invoices</h1>
 
 <div class="filter-container">
-    <i class="bi bi-funnel filter-icon"></i> <!-- Updated Bootstrap Icons funnel icon -->
+    <i class="bi bi-funnel filter-icon"></i>
 </div>
 
-<body>
+<div class="table-container">
+    <table id="invoicesTable" class="table">
+        <thead>
+            <tr>
+                <th><i class="bi bi-hash"></i> ID</th>
+                <th><i class="bi bi-building"></i> Company Name</th>
+                <th><i class="bi bi-file-earmark"></i> File Type</th>
+                <th><i class="bi bi-calendar"></i> Uploaded Date</th>
+                <th><i class="bi bi-file-earmark-text"></i> Description</th>
+                <th><i class="bi bi-calendar-check"></i> Due Date</th>
+                <th><i class="bi bi-credit-card"></i> Payment</th>
+                <th><i class="bi bi-check-circle"></i> Status</th>
+        </thead>
+        <tbody id="file-table-body">
+            <tr id="no-files-message" class="no-files-row">
+                <td colspan="11">No files have been added</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-    <div class="table-container">
-        <table id="invoicesTable" class="table">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Company Name</th>
-                    <th>File Type</th>
-                    <th> Uploaded Date</th>
-                    <th>Description</th>
-                    <th>Due Date</th>
-                    <th>Payment Method</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody id="file-table-body">
-                <!-- File rows will be inserted here by JavaScript -->
-                <tr id="no-files-message" class="no-files-row">
-                    <td colspan="11">No files have been added</td> <!-- Adjusted colspan to 11 -->
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <script src="~/js/InvoicePage.js"></script>
-</body>
+<script src="~/js/InvoicePage.js"></script>
+

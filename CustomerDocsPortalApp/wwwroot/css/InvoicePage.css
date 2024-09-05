@@ -10,34 +10,26 @@
 
 /*===================================================*/
 
-/*filter*/
-
+/* Filter Container */
 .filter-container {
     display: flex;
-    align-items: end;
-    margin-bottom: 20px; /* Adjust spacing as needed */
-
+    justify-content: flex-end; /* Align the filter icon to the right */
+    margin-bottom: 20px;
+    margin-left: 2rem; /* Adds a little space from the right edge */
 }
 
-#filterInput {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px; /* Space between input and icon */
-    flex-grow: 1; /* Takes up available space */
-}
-
+/* Filter Icon */
 .filter-icon {
-    font-size: 20px; /* Adjust size as needed */
-    color: #0B3040; /* Adjust color as needed */
+    font-size: 20px;
+    color: #0B3040;
     cursor: pointer;
-    
 }
 
     .filter-icon:hover {
-        color: #6CB2B0; /* Color change on hover */
+        color: #6CB2B0;
     }
+
+
 
 
 
@@ -45,11 +37,12 @@
 /*============================*/
 /* General table styling */
 .table-container {
-    width: 116.4%; /* Ensure the container takes up the full width of the page */
+    width: 117%; /* Ensure the container takes up the full width of the page */
     margin: 0; /* Remove any margin to allow the container to extend fully */
-    padding: 0 30px; /* Add padding on the left and right to shift the table to the right */
+    padding: 0 37px; /* Add padding on the left and right to shift the table to the right */
     overflow-x: auto; /* Enable horizontal scrolling if the table overflows */
     box-sizing: border-box; /* Include padding and border in the element's width and height */
+    margin-top: 10px; /* Adds some space between the filter and the table */
 }
 
 .table {
@@ -58,46 +51,45 @@
     font-family: Arial, sans-serif;
     font-size: 14px;
     text-align: left;
-    
 }
 
-.table th, .table td {
-    padding: 15px 20px; /* Increase padding for better spacing */
-    border-bottom: 1px solid #ddd; /* Border between rows */
-
-}
+    .table th, .table td {
+        padding: 15px 20px; /* Increase padding for better spacing */
+        border-bottom: 1px solid #ddd; /* Border between rows */
+    }
 
     .table th {
         font-weight: bold;
-        color: #F2F2F2!important;
-            background-color: #0B3040; /* Light background for headers */
+        color: #0B3040 !important;
+        background-color: #F2F2F2; /* Light background for headers */
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box; /* Ensure padding and borders are included in width */
     }
 
-.table tbody tr:nth-child(even) {
-    background-color: #f9f9f9; /* Alternate row colors for readability */
-}
+    /* Alternate row colors for readability */
+    .table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
 
-/* Example cell styling to demonstrate badges */
-.table tbody tr td.position, .table tbody tr td.role {
-    padding: 5px 10px;
-}
+    /* Example cell styling to demonstrate badges */
+    .table tbody tr td.position, .table tbody tr td.role {
+        padding: 5px 10px;
+    }
 
-/* Adjust the font style for specific columns */
+    /* Adjust the font style for table headers */
     .table th, .table td {
         font-family: Arial Rounded MT Bold, sans-serif;
         color: #0B3040; /* Text color for table content */
     }
 
-/* Extend table headers to the full width of the page */
-.table th {
-    text-align: left;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0;
-    box-sizing: border-box; /* Ensure padding and borders are included in width */
-}
-
-
+        /* Optional: Styling for table icons */
+        .table th i {
+            color: #0B3040;
+            margin-right: 0.39rem; /* Space between the icon and the text */
+            font-size: 16px; /* Adjust icon size if needed */
+        }
 
 
 
