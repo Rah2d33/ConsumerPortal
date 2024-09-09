@@ -1,5 +1,5 @@
 ﻿.Invoices {
-    font-size: 2.6rem;
+    font-size:2.6rem;
     font-weight: lighter;
     color: #6CB2B0;
     margin: 0;
@@ -93,29 +93,384 @@
 
 
 
+/*=======================================*/
+
+/* scroller table styling */
+
+/* Scrollbar Styling for Webkit Browsers */
+.table-container::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height for horizontal scrollbar */
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: transparent; /* Track background */
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #6CB2B0; /* Scrollbar color */
+    border-radius: 10px; /* Rounder edges */
+    border: 3px solid transparent; /* Adds space around the thumb */
+    transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+
+    .table-container::-webkit-scrollbar-thumb:hover {
+        background: #4a8a8a; /* Darker shade on hover */
+    }
+
+/* Scrollbar Styling for Firefox */
+.table-container {
+    scrollbar-width: thin; /* Thin scrollbar for Firefox */
+    scrollbar-color: #6CB2B0 transparent; /* Thumb and track color */
+}
+
+/* Scrollbar Styling for IE and Edge */
+.table-container {
+    -ms-overflow-style: none; /* Hides scrollbar in IE and Edge */
+}
 
 
 
 
+/* Combined media queries for various screen sizes */
+@media (max-width: 639px) {
+    .Invoices {
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
+    }
+
+    .filter-container {
+        margin-left: 1rem;
+    }
+
+    .filter-icon {
+        font-size: 16px;
+    }
+
+    .table-container {
+        width: calc(100% + 50px);
+        padding: 0 25px;
+        margin-left: -25px;
+    }
+
+    .table th, .table td {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .Invoices {
+        font-size: 2rem;
+        padding: 1.5rem 3rem;
+    }
+
+    .filter-container {
+        margin-left: 1.5rem;
+    }
+
+    .filter-icon {
+        font-size: 18px;
+    }
+
+    .table-container {
+        width: calc(100% + 60px);
+        padding: 0 30px;
+        margin-left: -30px;
+    }
+
+    .table th, .table td {
+        font-size: 13px;
+        padding: 12px 22px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 878px) {
+    .Invoices {
+        font-size: 2.2rem;
+        padding: 1.8rem 4rem;
+    }
+
+    .filter-container {
+        margin-left: 1.8rem;
+    }
+
+    .filter-icon {
+        font-size: 18px;
+    }
+
+    .table-container {
+        width: calc(100% + 70px);
+        padding: 0 35px;
+        margin-left: -35px;
+    }
+
+    .table th, .table td {
+        font-size: 13px;
+        padding: 13px 24px;
+    }
+}
+
+@media (min-width: 879px) and (max-width: 1007px) {
+    .Invoices {
+        font-size: 2.4rem;
+        padding: 2rem 5rem;
+    }
+
+    .filter-container {
+        margin-left: 2rem;
+    }
+
+    .filter-icon {
+        font-size: 20px;
+    }
+
+    .table-container {
+        width: calc(100% + 80px);
+        padding: 0 40px;
+        margin-left: -40px;
+    }
+
+    .table th, .table td {
+        font-size: 14px;
+        padding: 14px 25px;
+    }
+}
+
+@media (min-width: 1008px) and (max-width: 1224px) {
+    .Invoices {
+        font-size: 2.5rem;
+        padding: 2.1rem 7rem;
+    }
+
+    .filter-container {
+        margin-left: 2.2rem;
+    }
+
+    .filter-icon {
+        font-size: 20px;
+    }
+
+    .table-container {
+        width: calc(100% + 90px);
+        padding: 0 45px;
+        margin-left: -45px;
+    }
+
+    .table th, .table td {
+        font-size: 14px;
+        padding: 15px 27px;
+    }
+}
+
+@media (min-width: 1234px) and (max-width: 1262px) {
+    .Invoices {
+        font-size: 2.6rem;
+        padding: 2.3rem 7rem;
+    }
+
+    .filter-container {
+        margin-left: 2.5rem;
+    }
+
+    .filter-icon {
+        font-size: 20px;
+    }
+
+    .table-container {
+        width: calc(100% + 100px);
+        padding: 0 50px;
+        margin-left: -50px;
+    }
+
+    .table th, .table td {
+        font-size: 14px;
+        padding: 15px 28px;
+    }
+}
+
+@media (min-width: 1024px) and (max-height: 599px) {
+    .Invoices {
+        font-size: 2.5rem;
+        padding: 2rem 7.5rem;
+    }
+
+    .filter-container {
+        margin-left: 2.5rem;
+    }
+
+    .filter-icon {
+        font-size: 20px;
+    }
+
+    .table-container {
+        width: calc(100% + 85px);
+        padding: 0 42px;
+        margin-left: -42px;
+    }
+
+    .table th, .table td {
+        font-size: 14px;
+        padding: 15px 26px;
+    }
+}
+
+@media (min-width: 1024px) and (max-height: 815px) {
+    .Invoices {
+        font-size: 2.6rem;
+        padding: 2.2rem 3.5rem;
+    }
+
+    .filter-container {
+        margin-left: 2.5rem;
+    }
+
+    .filter-icon {
+        font-size: 20px;
+    }
+
+    .table-container {
+        width: calc(100% + 37px);
+        padding: 0 37px;
+        margin-left: -25px;
+    }
+
+    .table th, .table td {
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+}
+
+@media (min-width: 1440px) and (max-height: 725px) {
+    .Invoices {
+        font-size: 2.8rem;
+        padding: 2.5rem 10rem;
+    }
+
+    .filter-container {
+        margin-left: 3rem;
+    }
+
+    .filter-icon {
+        font-size: 22px;
+    }
+
+    .table-container {
+        width: 100%;
+        padding: 0 11rem;
+    }
+
+    .table th, .table td {
+        font-size: 15px;
+        padding: 16px 25px;
+    }
+}
+
+@media (min-width: 1440px) and (max-height: 820px) {
+    .Invoices {
+        font-size: 2.7rem;
+        padding: 2.3rem 9rem;
+    }
+
+    .filter-container {
+        margin-left: 2.8rem;
+    }
+
+    .filter-icon {
+        font-size: 21px;
+    }
+
+    .table-container {
+        width: 100%;
+        padding: 0 10rem;
+    }
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        transform: translateX(0rem); /* Shift the table to the left */
+        width: calc(100% + 6.5rem); /* Extend the table width to cover the extra space */
+    }
 
 
+    .table th, .table td {
+        font-size: 15px;
+        padding: 15px 24px;
+    }
+}
+
+@media (min-width: 1440px) and (max-height: 725px) {
+    .Invoices {
+        font-size: 2.08rem; /* Adjusted for zoom level */
+        padding: 1.68rem 7.2rem; /* Adjusted for zoom level */
+    }
+
+    .filter-container {
+        margin-left: 12rem; /* Adjusted for zoom level */
+    }
+
+    .filter-icon {
+        font-size: 16.8px; /* Adjusted for zoom level */
+    }
+
+    .table-container {
+        max-width: calc(100% + 2.4rem); /* Adjusted for zoom level */
+        padding: 0.16rem 4rem; /* Adjusted for zoom level */
+        margin: 0px 2.4rem 0px 3.2rem; /* Adjusted for zoom level */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        position: relative; /* Ensure positioning context for the table */
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        transform: translateX(0rem); /* Shift the table to the left */
+        width: calc(100% + 5.2rem); /* Adjusted for zoom level */
+    }
+
+        .table th, .table td {
+            font-size: 12px; /* Adjusted for zoom level */
+            padding: 11px 17.6px; /* Adjusted for zoom level */
+        }
+}
 
 
+@media (min-width: 1440px) and (max-height: 822px) {
+    .Invoices {
+        font-size: 2.6rem;
+        padding: 2.1rem 9rem;
+    }
+
+    .filter-container {
+        margin-left: 15rem; /* Adjust spacing for the filter container */
+    }
+
+    .filter-icon {
+        font-size: 21px;
+    }
+
+    .table-container {
+        max-width: calc(112% + 3rem); /* Extend the container width but prevent overflow */
+        padding: 0.2rem 5rem;
+        margin: 0px 3rem 0px 4rem; /* Adjust left margin to move table closer to filter icon */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        position: relative; /* Ensure positioning context for the table */
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        transform: translateX(0rem); /* Shift the table to the left */
+        width: calc(100% + 6.5rem); /* Extend the table width to cover the extra space */
+        
+    }
 
 
+    .table th, .table td {
+        font-size: 15px;
+        padding: 14px 5px;
+        text-align:left;
+        
 
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+    
+}
 
 
 
