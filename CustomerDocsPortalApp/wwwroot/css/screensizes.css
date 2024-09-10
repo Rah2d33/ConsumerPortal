@@ -1,0 +1,987 @@
+﻿/*Authenticated Greeting*/
+
+/* Authenticated greeting for all screens */
+
+/* For small screens like mobile phones */
+@media (max-width: 639px) {
+    .Greetings {
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
+    }
+}
+
+/* For small to medium screens like tablets in portrait mode */
+@media (min-width: 640px) and (max-width: 767px) {
+    .Greetings {
+        font-size: 2rem;
+        padding: 1.5rem 3rem;
+    }
+}
+
+/* For medium screens like tablets in landscape mode and small laptops */
+@media (min-width: 768px) and (max-width: 878px) {
+    .Greetings {
+        font-size: 2.2rem;
+        padding: 1.8rem 4rem;
+    }
+}
+
+/* For screens with a width of 879px to 1007px */
+@media (min-width: 879px) and (max-width: 1007px) {
+    .Greetings {
+        font-size: 2.4rem;
+        padding: 2rem 5rem;
+    }
+}
+
+/* For screens with a width of 1008px to 1224px (including 1024px) */
+@media (min-width: 1008px) and (max-width: 1224px) {
+    .Greetings {
+        font-size: 2.5rem;
+        padding: 2.1rem 7rem;
+    }
+}
+
+/* For 1024px x 599px screen size */
+@media (min-width: 1024px) and (max-height: 599px) {
+    .Greetings {
+        font-size: 2.6rem;
+        padding: 2rem 8.5rem;
+    }
+}
+
+/* For 1024px x 815px screen size */
+@media (min-width: 1024px) and (max-height: 815px) {
+    .Greetings {
+        font-size: 2.6rem;
+        padding: 2.2rem 3.5rem !important;
+    }
+}
+
+/* For screens with a width of 1234px to 1262px */
+@media (min-width: 1234px) and (max-width: 1262px) {
+    .Greetings {
+        font-size: 2.6rem;
+        padding: 2.3rem 7rem;
+    }
+}
+
+@media (min-width: 1241px) and (max-height: 599px) {
+    .Greetings {
+        font-size: 2.7rem !important;
+        padding: 2.4rem 6rem !important;
+        margin-right: auto !important; /* Add margin to push it to the right */
+    }
+}
+
+
+/* For 1440px x 689px screen size */
+@media (min-width: 1440px) and (max-height: 689px) {
+    .Greetings {
+        font-size: 2.8rem;
+        padding: 2.5rem 6.5rem !important;
+    }
+}
+
+/* For 1440px x 725px screen size with 85% zoom */
+@media (min-width: 1440px) and (max-height: 725px) {
+    .Greetings {
+        font-size: 2.38rem; /* Adjusted for 85% zoom */
+        padding: 2.13rem 5.53rem !important; /* Adjusted for 85% zoom */
+    }
+}
+
+/* For 1440px x 815px screen size */
+@media (min-width: 1440px) and (max-height: 815px) {
+    .Greetings {
+        font-size: 2.9rem;
+        padding: 2.6rem 8.5rem !important;
+    }
+}
+
+/* For 1440px x 959px screen size */
+@media (min-width: 1440px) and (max-height: 959px) {
+    .Greetings {
+        font-size: 3rem;
+        padding: 2.7rem 0.5rem !important;
+    }
+}
+
+/* For 1460px x 705px screen size */
+@media (min-width: 1460px) and (max-height: 705px) {
+    .Greetings {
+        font-size: 3rem;
+        padding: 2rem 9.5rem !important;
+    }
+}
+
+/* For larger screens like desktops and smaller TVs */
+@media (min-width: 1609px) and (max-width: 4000px) {
+    .Greetings {
+        font-size: 3.2rem;
+        padding: 2.5rem 2rem;
+    }
+}
+
+/* For extra-large screens like 4K monitors and large TVs */
+@media (min-width: 4001px) {
+    .Greetings {
+        font-size: 3.5rem;
+        padding: 4rem 10rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*===================================================================*/
+
+/*invoicetable screen size*/
+/* Combined media queries for various screen sizes */
+@media (max-width: 639px) {
+    .Invoices
+
+{
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+}
+
+.filter-container {
+    margin-left: 1rem;
+}
+
+.filter-icon {
+    font-size: 16px;
+}
+
+.table-container {
+    width: calc(100% + 50px);
+    padding: 0 25px;
+    margin-left: -25px;
+}
+
+.table {
+    background-color: #fff;
+    width: calc(100% + 50px);
+}
+
+    .table th, .table td {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .Invoices {
+        font-size: 2rem;
+        padding: 1.5rem 3rem;
+    }
+
+    .filter-container {
+        margin-left: 1.5rem;
+    }
+
+    .filter-icon {
+        font-size: 18px;
+    }
+
+    .table-container {
+        width: calc(100% + 60px);
+        padding: 0 30px;
+        margin-left: -30px;
+    }
+
+    .table {
+        background-color: #fff;
+        width: calc(100% + 60px);
+    }
+
+        .table th, .table td {
+            font-size: 13px;
+            padding: 12px 22px;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 878px) {
+    .Invoices {
+        font-size: 2.2rem;
+        padding: 1.8rem 4rem;
+    }
+
+    .filter-container {
+        margin-left: 1.8rem;
+    }
+
+    .filter-icon {
+        font-size: 18px;
+    }
+
+    .table-container {
+        width: calc(100% + 70px);
+        padding: 0 35px;
+        margin-left: -35px;
+    }
+
+    .table {
+        background-color: #fff;
+        width: calc(100% + 70px);
+    }
+
+        .table th, .table td {
+            font-size: 13px;
+            padding: 13px 24px;
+        }
+}
+
+@media (min-width: 879px) and (max-width: 1007px) {
+    .Invoices {
+        font-size: 2.4rem;
+        padding: 2rem 5rem;
+    }
+
+    .filter-container {
+        margin-left: 2rem;
+    }
+
+    .filter-icon {
+        font-size: 20px;
+    }
+
+    .table-container {
+        width: calc(100% + 80px);
+        padding: 0 40px;
+        margin-left: -40px;
+    }
+
+    .table {
+        background-color: #fff;
+        width: calc(100% + 80px);
+    }
+
+        .table th, .table td {
+            font-size: 14px;
+            padding: 14px 25px;
+        }
+}
+
+@media (min-width: 979px) and (max-width: 1007px) and (min-height: 586px) {
+    .Invoices {
+        font-size: 2.4rem;
+        padding: 2rem 5rem !important;
+    }
+
+    .filter-container {
+        margin-left: 2rem;
+    }
+
+    .filter-icon {
+        font-size: 20px;
+    }
+
+    .table-container {
+        width: calc(100% + 80px);
+        padding: 0 40px;
+        margin-left: -40px;
+    }
+
+    .table {
+        background-color: #fff;
+        width: calc(100% + 80px);
+    }
+
+        .table th, .table td {
+            font-size: 14px;
+            padding: 14px 25px;
+        }
+}
+
+@media (min-width: 972px) and (max-height: 608px) {
+    .Invoices {
+        font-size: 2.4rem;
+        padding: 2rem 5rem;
+    }
+
+    .filter-container {
+        margin-left: 2rem;
+    }
+
+    .filter-icon {
+        font-size: 20px;
+    }
+
+    .table-container {
+        width: calc(100% + 80px);
+        padding: 0 40px;
+        margin-left: -40px;
+    }
+
+    .table {
+        background-color: #fff;
+        width: calc(100% + 80px);
+    }
+
+        .table th, .table td {
+            font-size: 14px;
+            padding: 14px 25px;
+        }
+}
+
+/* Media query for screen size 979 x 824 */
+@media (min-width: 979px) and (max-width: 979px) and (max-height: 824px) {
+    .Invoices {
+        font-size: 2.4rem; /* Adjust font size */
+        padding: 2rem 5rem; /* Adjust padding */
+    }
+
+    .filter-container {
+        margin-left: 2rem; /* Adjust margin */
+    }
+
+    .filter-icon {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .table-container {
+        width: calc(100% + 80px); /* Adjust width to account for overflow */
+        padding: 0 40px; /* Adjust padding */
+        margin: 0; /* Reset margin */
+        overflow-x: auto; /* Ensure horizontal scroll if needed */
+        position: relative; /* Ensure proper positioning context */
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        width: 100%; /* Set width to 100% of the container */
+        transform: translateX(0); /* Remove previous translation */
+    }
+
+        .table th, .table td {
+            font-size: 14px; /* Adjust font size */
+            padding: 14px 25px; /* Adjust padding */
+        }
+}
+
+
+
+
+
+
+
+@media (min-width: 1008px) and (max-width: 1224px) {
+    .Invoices {
+        font-size: 2.5rem;
+        padding: 2.1rem 7rem;
+    }
+
+    .filter-container {
+        margin-left: 2.2rem;
+    }
+
+    .filter-icon {
+        font-size: 20px;
+        margin-right: 20px; /* Add spacing */
+    }
+
+    .table-container {
+        width: calc(100% + 90px);
+        padding: 0 45px;
+        margin-left: -45px;
+    }
+
+    .table {
+        background-color: #fff;
+        width: calc(100% + 90px);
+    }
+
+        .table th, .table td {
+            font-size: 14px;
+            padding: 15px 27px;
+        }
+}
+
+@media (min-width: 1234px) and (max-width: 1262px) {
+    .Invoices {
+        font-size: 2.6rem;
+        padding: 2.3rem 7rem;
+    }
+
+    .filter-container {
+        margin-left: 2.5rem;
+    }
+
+    .filter-icon {
+        font-size: 20px;
+        margin-right: 20px; /* Add spacing */
+    }
+
+    .table-container {
+        width: calc(100% + 100px);
+        padding: 0 50px;
+        margin-left: -50px;
+    }
+
+    .table {
+        background-color: #fff;
+        width: calc(100% + 100px);
+    }
+
+        .table th, .table td {
+            font-size: 14px;
+            padding: 15px 28px;
+        }
+}
+
+@media (min-width: 1024px) and (max-height: 599px) {
+    .Invoices {
+        font-size: 2.5rem;
+        padding: 2rem 7.5rem;
+    }
+
+    .filter-container {
+        margin-left: 2.5rem;
+    }
+
+    .filter-icon {
+        font-size: 20px;
+        margin-right: 20px; /* Add spacing */
+    }
+
+    .table-container {
+        width: calc(100% + 85px);
+        padding: 0 42px;
+        margin-left: -42px;
+    }
+
+    .table {
+        background-color: #fff;
+        width: calc(100% + 85px);
+    }
+
+        .table th, .table td {
+            font-size: 14px;
+            padding: 15px 26px;
+        }
+}
+
+/* Media query for screen size 1024 x 815 */
+@media (min-width: 1024px) and (max-height: 815px) {
+    .Invoices {
+        font-size: 2.5rem; /* Adjust font size */
+        padding: 2.1rem 7rem; /* Adjust padding */
+    }
+
+    .filter-container {
+        margin-left: 2.2rem; /* Adjust margin */
+    }
+
+    .filter-icon {
+        font-size: 20px; /* Adjust font size */
+        margin-right: 10px; /* Add spacing between icons and other elements */
+    }
+
+    .table-container {
+        width: calc(100% + 85px); /* Adjust width */
+        padding: 0 42px; /* Adjust padding */
+        margin-left: -42px; /* Adjust margin */
+        overflow-x: auto; /* Ensure horizontal overflow is visible */
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        width: calc(100% + 85px); /* Adjust width */
+        transform: translateX(0); /* Keep table aligned */
+    }
+
+        .table th, .table td {
+            font-size: 14px; /* Adjust font size */
+            padding: 15px 26px; /* Adjust padding */
+        }
+
+        .table th {
+            padding-right: 40px; /* Add spacing between table headers and icons */
+        }
+}
+
+
+@media (min-width: 1440px) and (max-height: 782px) {
+    .Invoices {
+        font-size: 2.08rem;
+        padding: 1.68rem 7.2rem;
+    }
+
+    .filter-container {
+        margin-left: 12rem;
+    }
+
+    .filter-icon {
+        font-size: 16.8px;
+        margin-right: 20px; /* Add spacing */
+    }
+
+    .table-container {
+        max-width: calc(100% + 2.4rem);
+        padding: 0.16rem 4rem;
+        margin: 0px 2.4rem 0px 3.2rem;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    .table {
+        background-color: #fff;
+        transform: translateX(0rem);
+        width: calc(100% + 5.2rem);
+    }
+
+        .table th, .table td {
+            font-size: 12px;
+            padding: 11px 17.6px;
+        }
+}
+
+
+@media (min-width: 1163px) and (max-width: 1168px) and (max-height: 556px) {
+    .Invoices {
+        font-size: 2.3rem; /* Adjust font size for better visibility */
+        padding: 1.8rem 7rem; /* Adjust padding to fit screen */
+    }
+
+    .filter-container {
+        margin-left: 12rem; /* Adjust spacing for the filter container */
+    }
+
+    .filter-icon {
+        font-size: 18px; /* Adjust icon size for screen size */
+        margin-right: 20px; /* Add spacing */
+    }
+
+    .table-container {
+        max-width: calc(110% + 2.5rem); /* Reduce the extension width to fit the screen */
+        padding: 0.2rem 4rem;
+        margin: 0px 2.5rem 0px 3rem; /* Adjust left margin to fit better */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        position: relative; /* Ensure positioning context for the table */
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        transform: translateX(0rem); /* Keep table aligned to the left */
+        width: calc(100% + 6rem); /* Extend the table width to fit the screen without overflow */
+    }
+
+        .table th, .table td {
+            font-size: 14px; /* Adjust font size for better readability on smaller screen */
+            padding: 12px 4px; /* Adjust padding */
+            text-align: left;
+        }
+}
+
+@media (max-width: 1241px) and (max-height: 599px) {
+    .Invoices {
+        font-size: 2.2rem!important; /* Adjusted font size for smaller screens */
+        padding: 1.5rem 5rem!important; /* Adjusted padding for smaller screens */
+    }
+
+    .filter-container {
+        margin-right: 0rem; /* Adjusted margin for smaller screens */
+    }
+
+    .filter-icon {
+        font-size: 18px; /* Adjusted icon size */
+        margin-right: 35rem !important; /* Adjusted spacing */
+    }
+
+    .table-container {
+        width: 100%;
+        padding: 0 4rem; /* Adjusted padding for smaller screens */
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        transform: translateX(0); /* Reset transformation */
+        width: 100%; /* Ensure table fits within the container */
+    }
+
+        .table th, .table td {
+            font-size: 14px; /* Adjusted font size for readability */
+            padding: 12px 20px; /* Adjusted padding for smaller screens */
+        }
+}
+
+
+
+/*@media (min-width: 1440px) and (max-height: 725px) {
+    .Invoices {
+        font-size: 2.8rem;
+        padding: 2.5rem 10rem;
+    }
+
+    .filter-container {
+        margin-left: 3rem;
+    }
+
+    .filter-icon {
+        font-size: 22px;
+        margin-right: 30px;*/ /* Add spacing */
+    /*}
+
+    .table-container {
+        width: 100%;
+        padding: 0 11rem;
+    }
+
+    .table th, .table td {
+        font-size: 15px;
+        padding: 16px 25px;
+    }
+}*/
+
+@media (min-width: 1440px) and (max-height: 820px) {
+    .Invoices {
+        font-size: 2.7rem;
+        padding: 2.3rem 9rem;
+    }
+
+    .filter-container {
+        margin-left: 2.8rem;
+    }
+
+    .filter-icon {
+        font-size: 21px;
+        margin-right: 20px; /* Add spacing */
+    }
+
+    .table-container {
+        width: 100%;
+        padding: 0 10rem;
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        transform: translateX(0rem); /* Shift the table to the left */
+        width: calc(100% + 6.5rem); /* Extend the table width to cover the extra space */
+    }
+
+
+        .table th, .table td {
+            font-size: 15px;
+            padding: 15px 24px;
+        }
+}
+
+@media (min-width: 1440px) and (max-height: 705px) {
+    .Invoices {
+        font-size: 2.8rem; /* Adjusted for zoom level */
+        padding: 1.68rem 9.2rem!important; /* Adjusted for zoom level */
+    }
+
+    .filter-container {
+        margin-right: -1.1rem !important; /* Adjusted for zoom level */
+    }
+
+    .filter-icon {
+        font-size: 16.8px; /* Adjusted for zoom level */
+        margin-right: 30px !important; /* Add spacing */
+    }
+
+    .table-container {
+        max-width: calc(100% + 2.4rem); /* Adjusted for zoom level */
+        padding: 0.16rem 4rem; /* Adjusted for zoom level */
+        margin: 0px 2.4rem 0px 3.5rem !important; /* Adjusted for zoom level */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        position: relative; /* Ensure positioning context for the table */
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        transform: translateX(1rem)!important; /* Shift the table more to the left */
+        width: calc(100% + 5.2rem); /* Adjusted for zoom level */
+    }
+
+    .table th, .table td {
+        font-size: 12px; /* Adjusted for zoom level */
+        padding: 11px 17.6px !important; /* Adjusted for zoom level */
+        text-align: left;
+        padding-left: 5px; /* Additional left padding to align headers closer to the left */
+    }
+}
+
+
+
+@media (min-width: 1440px) and (max-height: 725px) {
+    .Invoices {
+        font-size: 2.08rem; /* Adjusted for zoom level */
+        padding: 1.68rem 7.2rem; /* Adjusted for zoom level */
+    }
+
+    .filter-container {
+        margin-left: 12rem; /* Adjusted for zoom level */
+    }
+
+    .filter-icon {
+        font-size: 16.8px; /* Adjusted for zoom level */
+        margin-right: 30px !important; /* Add spacing */
+    }
+
+    .table-container {
+        max-width: calc(100% + 2.4rem); /* Adjusted for zoom level */
+        padding: 0.16rem 4rem; /* Adjusted for zoom level */
+        margin: 0px 2.4rem 0px 3.2rem; /* Adjusted for zoom level */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        position: relative; /* Ensure positioning context for the table */
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        transform: translateX(0rem); /* Shift the table to the left */
+        width: calc(100% + 5.2rem); /* Adjusted for zoom level */
+    }
+
+        .table th, .table td {
+            font-size: 12px; /* Adjusted for zoom level */
+            padding: 11px 17.6px; /* Adjusted for zoom level */
+        }
+}
+
+
+@media (min-width: 1440px) and (max-height: 782px) {
+    .Invoices {
+        font-size: 2.08rem; /* Adjusted for zoom level */
+        padding: 1.68rem 7.2rem; /* Adjusted for zoom level */
+    }
+
+    .filter-container {
+        margin-left: 12rem; /* Adjusted for zoom level */
+    }
+
+    .filter-icon {
+        font-size: 16.8px; /* Adjusted for zoom level */
+        margin-right: 20px; /* Add spacing */
+    }
+
+    .table-container {
+        max-width: calc(100% + 2.4rem); /* Adjusted for zoom level */
+        padding: 0.16rem 4rem; /* Adjusted for zoom level */
+        margin: 0px 2.4rem 0px 3.2rem; /* Adjusted for zoom level */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        position: relative; /* Ensure positioning context for the table */
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        transform: translateX(0rem); /* Keep table aligned */
+        width: calc(100% + 5.2rem); /* Adjusted for zoom level */
+    }
+
+        .table th, .table td {
+            font-size: 12px; /* Adjusted for zoom level */
+            padding: 11px 17.6px; /* Adjusted for zoom level */
+        }
+}
+
+
+
+@media (min-width: 1440px) and (max-height: 815px) {
+    .Invoices {
+        font-size: 2.8rem; /* Adjusted for zoom level */
+        padding: 1.68rem 9.2rem !important; /* Adjusted for zoom level */
+    }
+
+    .filter-container {
+        margin-right: -1.1rem !important; /* Adjusted for zoom level */
+    }
+
+    .filter-icon {
+        font-size: 16.8px; /* Adjusted for zoom level */
+        margin-right: 30px !important; /* Add spacing */
+    }
+
+    .table-container {
+        max-width: calc(100% + 2.4rem); /* Adjusted for zoom level */
+        padding: 0.16rem 4rem; /* Adjusted for zoom level */
+        margin: 0px 2.4rem 0px 3.5rem !important; /* Adjusted for zoom level */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        position: relative; /* Ensure positioning context for the table */
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        transform: translateX(1rem) !important; /* Shift the table more to the left */
+        width: calc(100% + 5.2rem); /* Adjusted for zoom level */
+    }
+
+        .table th, .table td {
+            font-size: 12px; /* Adjusted for zoom level */
+            padding: 11px 17.6px !important; /* Adjusted for zoom level */
+            text-align: left;
+            padding-left: 5px; /* Additional left padding to align headers closer to the left */
+        }
+}
+
+
+@media (min-width: 1241px) and (max-height: 599px) {
+    .Invoices {
+        font-size: 2.5rem; /* Adjust as needed for zoom */
+        padding: 1.5rem 8.5rem!important; /* Adjusted padding for zoom */
+    }
+
+    .filter-container {
+        margin-right: -1rem !important; /* Adjust spacing */
+    }
+
+    .filter-icon {
+        font-size: 15px; /* Adjust size for zoom */
+        margin-right: 25px !important; /* Adjust for spacing */
+    }
+
+    .table-container {
+        max-width: calc(100% + 2rem); /* Adjusted for zoom level */
+        padding: 0.1rem 3.5rem; /* Adjust padding for zoom */
+        margin: 0 2rem 0 3rem !important; /* Adjust for zoom */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        position: relative; /* Keep table position in context */
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color fills area */
+        transform: translateX(0.8rem)!important; /* Slight shift to the left */
+        width: calc(100% + 4.5rem); /* Adjust for zoom */
+    }
+
+    .table th, .table td {
+        font-size: 11px; /* Adjust font size */
+        padding: 10px 16px !important; /* Adjust padding for zoom */
+        text-align: left;
+        padding-left: 4px; /* Align headers closer to the left */
+    }
+}
+
+
+
+@media (min-width: 1440px) and (max-height: 822px) {
+    .Invoices {
+        font-size: 2.6rem;
+        padding: 2.1rem 9rem;
+    }
+
+    .filter-container {
+        margin-left: 15rem; /* Adjust spacing for the filter container */
+    }
+
+    .filter-icon {
+        font-size: 21px;
+        margin-right: 20px; /* Add spacing */
+    }
+
+    .table-container {
+        max-width: calc(112% + 3rem); /* Extend the container width but prevent overflow */
+        padding: 0.2rem 5rem;
+        margin: 0px 3rem 0px 4rem; /* Adjust left margin to move table closer to filter icon */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        position: relative; /* Ensure positioning context for the table */
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        transform: translateX(0rem); /* Shift the table to the left */
+        width: calc(100% + 6.5rem); /* Extend the table width to cover the extra space */
+    }
+
+
+        .table th, .table td {
+            font-size: 15px;
+            padding: 14px 5px;
+            text-align: left;
+        }
+}
+
+@media (min-width: 1440px) and (max-height: 959px) {
+    .Invoices {
+        font-size: 2.5rem; /* Adjusted for zoom level */
+        padding: 1.7rem 7.5rem; /* Adjusted for zoom level */
+    }
+
+    .filter-container {
+        margin-left: 12.5rem; /* Adjusted for zoom level */
+    }
+
+    .filter-icon {
+        font-size: 17px; /* Adjusted for zoom level */
+        margin-right: 30px; /* Add spacing */
+    }
+
+    .table-container {
+        max-width: calc(100% + 2.5rem); /* Adjusted for zoom level */
+        padding: 0.2rem 4.5rem; /* Adjusted for zoom level */
+        margin: 0 2.5rem 0 2.5rem; /* Adjusted for zoom level */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        position: relative; /* Ensure positioning context for the table */
+    }
+
+    .table {
+        background-color: #fff; /* Ensure background color covers the extended area */
+        transform: translateX(0); /* Ensure no shift */
+        width: calc(100% + 5.5rem); /* Adjusted for zoom level */
+    }
+
+        .table th, .table td {
+            font-size: 12px; /* Adjusted for zoom level */
+            padding: 12px 18px; /* Adjusted for zoom level */
+        }
+}
+
+
+/*====================================================================*/
+
+/*Table header icons*/
+
+/* Small screens */
+@media (max-width: 639px) {
+    .table th {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+        .table th i {
+            margin-right: 6px; /* Adjust spacing for smaller screens */
+        }
+}
+
+/* Medium screens */
+@media (min-width: 640px) and (max-width: 767px) {
+    .table th {
+        padding: 12px 18px; /* Adjust padding */
+    }
+
+        .table th i {
+            margin-right: 7px; /* Adjust spacing */
+        }
+}
+
+/* Large screens */
+@media (min-width: 768px) and (max-width: 878px) {
+    .table th {
+        padding: 14px 20px; /* Adjust padding */
+    }
+
+        .table th i {
+            margin-right: 8px; /* Maintain consistent spacing */
+        }
+}
+
+/* Extra large screens */
+@media (min-width: 879px) {
+    .table th {
+        padding: 16px 22px; /* Adjust padding for larger screens */
+    }
+
+        .table th i {
+            margin-right: 10px; /* Add more spacing for larger screens */
+        }
+}
