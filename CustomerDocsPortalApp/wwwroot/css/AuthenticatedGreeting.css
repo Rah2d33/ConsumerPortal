@@ -17,127 +17,285 @@
 /*===================================================*/
 
 
-/*Authenticated greeting for all screens*/
-
+/* Authenticated greeting for all screens */
 
 /* For small screens like mobile phones */
-@media (max-width: 639px) {
+/*@media (max-width: 639px) {
     .Greetings {
         font-size: 1.8rem;
         padding: 1rem 2rem;
     }
-}
+}*/
 
 /* For small to medium screens like tablets in portrait mode */
-@media (min-width: 640px) and (max-width: 767px) {
+/*@media (min-width: 640px) and (max-width: 767px) {
     .Greetings {
         font-size: 2rem;
         padding: 1.5rem 3rem;
     }
-}
+}*/
 
 /* For medium screens like tablets in landscape mode and small laptops */
-@media (min-width: 768px) and (max-width: 878px) {
+/*@media (min-width: 768px) and (max-width: 878px) {
     .Greetings {
         font-size: 2.2rem;
         padding: 1.8rem 4rem;
     }
-}
+}*/
 
 /* For screens with a width of 879px to 1007px */
-@media (min-width: 879px) and (max-width: 1007px) {
+/*@media (min-width: 879px) and (max-width: 1007px) {
     .Greetings {
         font-size: 2.4rem;
         padding: 2rem 5rem;
     }
-}
+}*/
 
 /* For screens with a width of 1008px to 1224px (including 1024px) */
-@media (min-width: 1008px) and (max-width: 1224px) {
+/*@media (min-width: 1008px) and (max-width: 1224px) {
     .Greetings {
         font-size: 2.5rem;
         padding: 2.1rem 7rem;
     }
-}
+}*/
 
 /* For 1024px x 599px screen size */
-@media (min-width: 1024px) and (max-height: 599px) {
+/*@media (min-width: 1024px) and (max-height: 599px) {
     .Greetings {
         font-size: 2.6rem;
-        padding: 2rem 7.5rem !important;
+        padding: 2rem 8.5rem;
     }
-}
+}*/
 
 /* For 1024px x 815px screen size */
-@media (min-width: 1024px) and (max-height: 815px) {
+/*@media (min-width: 1024px) and (max-height: 815px) {
     .Greetings {
         font-size: 2.6rem;
-        padding: 2.2rem 3.5rem;
+        padding: 2.2rem 3.5rem !important;
     }
-}
+}*/
 
 /* For screens with a width of 1234px to 1262px */
-@media (min-width: 1234px) and (max-width: 1262px) {
+/*@media (min-width: 1234px) and (max-width: 1262px) {
     .Greetings {
         font-size: 2.6rem;
         padding: 2.3rem 7rem;
     }
-}
+}*/
 
 /* For 1241px x 599px screen size */
-@media (min-width: 1241px) and (max-height: 599px) {
+/*@media (min-width: 1241px) and (max-height: 599px) {
     .Greetings {
         font-size: 2.7rem;
         padding: 2.4rem 6rem;
     }
-}
+}*/
 
 /* For 1440px x 689px screen size */
-@media (min-width: 1440px) and (max-height: 689px) {
+/*@media (min-width: 1440px) and (max-height: 689px) {
     .Greetings {
         font-size: 2.8rem;
         padding: 2.5rem 6.5rem;
     }
-}
+}*/
+
+/* For 1440px x 725px screen size with 85% zoom */
+/*@media (min-width: 1440px) and (max-height: 725px) {
+    .Greetings {
+        font-size: 2.38rem;*/ /* Adjusted for 85% zoom */
+        /*padding: 2.13rem 5.53rem !important;*/ /* Adjusted for 85% zoom */
+    /*}
+}*/
 
 /* For 1440px x 815px screen size */
-@media (min-width: 1440px) and (max-height: 815px) {
+/*@media (min-width: 1440px) and (max-height: 815px) {
     .Greetings {
         font-size: 2.9rem;
         padding: 2.6rem 8.5rem !important;
     }
-}
+}*/
 
 /* For 1440px x 959px screen size */
-@media (min-width: 1440px) and (max-height: 959px) {
+/*@media (min-width: 1440px) and (max-height: 959px) {
     .Greetings {
         font-size: 3rem;
         padding: 2.7rem 0.5rem !important;
     }
-}
+}*/
 
 /* For 1460px x 705px screen size */
-@media (min-width: 1460px) and (max-height: 705px) {
+/*@media (min-width: 1460px) and (max-height: 705px) {
     .Greetings {
         font-size: 3rem;
-        padding: 2.7rem 11.5rem !important;
+        padding: 2rem 9.5rem !important;
     }
-}
+}*/
 
 /* For larger screens like desktops and smaller TVs */
-@media (min-width: 1609px) and (max-width: 4000px) {
+/*@media (min-width: 1609px) and (max-width: 4000px) {
     .Greetings {
         font-size: 3.2rem;
         padding: 2.5rem 2rem;
     }
-}
+}*/
 
 /* For extra-large screens like 4K monitors and large TVs */
-@media (min-width: 4001px) {
+/*@media (min-width: 4001px) {
     .Greetings {
         font-size: 3.5rem;
         padding: 4rem 10rem;
     }
-}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Authenticated greeting for all screens */
+
+/* For small screens like mobile phones */
+/*@media (max-width: 639px) {
+    .Greetings {
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
+    }
+}*/
+
+/* For small to medium screens like tablets in portrait mode */
+/*@media (min-width: 640px) and (max-width: 767px) {
+    .Greetings {
+        font-size: 2rem;
+        padding: 1.5rem 3rem;
+    }
+}*/
+
+/* For medium screens like tablets in landscape mode and small laptops */
+/*@media (min-width: 768px) and (max-width: 878px) {
+    .Greetings {
+        font-size: 2.2rem;
+        padding: 1.8rem 4rem;
+    }
+}*/
+
+/* For screens with a width of 879px to 1007px */
+/*@media (min-width: 879px) and (max-width: 1007px) {
+    .Greetings {
+        font-size: 2.4rem;
+        padding: 2rem 5rem;
+    }
+}*/
+
+/* For screens with a width of 1008px to 1224px (including 1024px) */
+/*@media (min-width: 1008px) and (max-width: 1224px) {
+    .Greetings {
+        font-size: 2.5rem;
+        padding: 2.1rem 7rem;
+    }
+}*/
+
+/* For 1024px x 599px screen size */
+/*@media (min-width: 1024px) and (max-height: 599px) {
+    .Greetings {
+        font-size: 2.6rem;
+        padding: 2rem 8.5rem;
+    }
+}*/
+
+/* For 1024px x 815px screen size */
+/*@media (min-width: 1024px) and (max-height: 815px) {
+    .Greetings {
+        font-size: 2.6rem;
+        padding: 2.2rem 3.5rem !important;
+    }
+}*/
+
+/* For screens with a width of 1234px to 1262px */
+/*@media (min-width: 1234px) and (max-width: 1262px) {
+    .Greetings {
+        font-size: 2.6rem;
+        padding: 2.3rem 7rem;
+    }
+}*/
+
+/* For 1241px x 599px screen size */
+/*@media (min-width: 1241px) and (max-height: 599px) {
+    .Greetings {
+        font-size: 2.7rem;
+        padding: 2.4rem 6rem;
+    }
+}*/
+
+/* For 1440px x 689px screen size */
+/*@media (min-width: 1440px) and (max-height: 689px) {
+    .Greetings {
+        font-size: 2.8rem;
+        padding: 2.5rem 6.5rem;
+    }
+}*/
+
+/* For 1440px x 725px screen size with 85% zoom */
+/*@media (min-width: 1440px) and (max-height: 725px) {
+    .Greetings {
+        font-size: 2.38rem;*/ /* Adjusted for 85% zoom */
+        /*padding: 2.13rem 5.53rem !important;*/ /* Adjusted for 85% zoom */
+    /*}
+}*/
+
+/* For 1440px x 815px screen size */
+/*@media (min-width: 1440px) and (max-height: 815px) {
+    .Greetings {
+        font-size: 2.9rem;
+        padding: 2.6rem 8.5rem !important;
+    }
+}*/
+
+/* For 1440px x 959px screen size */
+/*@media (min-width: 1440px) and (max-height: 959px) {
+    .Greetings {
+        font-size: 3rem;
+        padding: 2.7rem 0.5rem !important;
+    }
+}*/
+
+/* For 1460px x 705px screen size */
+/*@media (min-width: 1460px) and (max-height: 705px) {
+    .Greetings {
+        font-size: 3rem;
+        padding: 2rem 9.5rem !important;
+    }
+}*/
+
+/* For larger screens like desktops and smaller TVs */
+/*@media (min-width: 1609px) and (max-width: 4000px) {
+    .Greetings {
+        font-size: 3.2rem;
+        padding: 2.5rem 2rem;
+    }
+}*/
+
+/* For extra-large screens like 4K monitors and large TVs */
+/*@media (min-width: 4001px) {
+    .Greetings {
+        font-size: 3.5rem;
+        padding: 4rem 10rem;
+    }
+}*/
+
 
 /*Typewriter*/
