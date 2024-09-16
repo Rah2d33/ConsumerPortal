@@ -56,7 +56,7 @@ body {
 
 /* Styling for sidebar navigation links */
 .sidebar .nav-link {
-    color: #0B3040; /* Static text color */
+    color: white; /* Static text color */
     text-decoration: none; /* Remove underline from links */
     padding: 1rem 0.5rem; /* Add padding for better spacing */
     border-radius: 0.25rem; /* Optional: rounded corners for links */
