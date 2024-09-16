@@ -6,11 +6,29 @@
     font-weight: lighter;
     color: #6CB2B0;
     margin: 0;
-    padding: 2.2rem 7.8rem ;
+    padding: 2.2rem 7.8rem;
     font-family: 'Arial Rounded MT';
     text-align: left;
-    animation: blink 1s step-start infinite; /* Adjust the duration and step to your preference */
+    white-space: nowrap;
+    overflow: hidden;
+    /*border-right: 2px solid #6CB2B0;*/ /* Blinking cursor */
+    /*animation: blink-cursor 0.7s steps(1) infinite;*/ /* Cursor blink animation */
 }
+
+@keyframes blink-cursor {
+    0% {
+        border-color: #6CB2B0;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: #6CB2B0;
+    }
+}
+
 
 
 

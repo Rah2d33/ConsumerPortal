@@ -1,44 +1,44 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
     const typingText = document.getElementById('typing-text');
-    const text = typingText.getAttribute('data-text');
-    typingText.setAttribute('data-text', ''); // Clear the initial data-text
+    const text = typingText.getAttribute('data-text'); // Get the text from data attribute
+    typingText.setAttribute('data-text', ''); // Clear the initial content
 
     let index = 0;
-    const speed = 100; // Speed of typing in milliseconds
-    const cursorSpeed = 500; // Speed of cursor blink in milliseconds
+    let isTyping = true; // To track whether we're typing or erasing
+    const typingSpeed = 100; // Speed for typing
+    const backspaceSpeed = 50; // Speed for backspacing
+    const pauseBeforeBackspace = 1000; // Delay before starting to backspace
+    const pauseBeforeTypingAgain = 500; // Delay before restarting typing after erasing
 
-    // Create a span element for the cursor
-    const cursor = document.createElement('span');
-    cursor.textContent = '|';
-    cursor.style.display = 'inline-block';
-    cursor.style.opacity = 1;
-    typingText.appendChild(cursor);
-
-    // Function to toggle the cursor's visibility
-    function toggleCursor() {
-        cursor.style.opacity = cursor.style.opacity === '1' ? '0' : '1';
-    }
-
-    // Start the cursor blinking
-    const cursorInterval = setInterval(toggleCursor, cursorSpeed);
-
-    // Function to type the text
-    function typeText() {
-        if (index < text.length) {
-            typingText.textContent = text.substring(0, index + 1); // Update text without the cursor
-            typingText.appendChild(cursor); // Reattach the cursor
-            index++;
-            setTimeout(typeText, speed);
+    // Function to handle typing and backspacing
+    function typeAndErase() {
+        if (isTyping) {
+            // Typing phase
+            if (index < text.length) {
+                typingText.textContent = text.substring(0, index + 1); // Add one character at a time
+                index++;
+                setTimeout(typeAndErase, typingSpeed);
+            } else {
+                // Once typing is finished, pause, then switch to backspacing
+                setTimeout(() => {
+                    isTyping = false;
+                    setTimeout(typeAndErase, backspaceSpeed); // Start erasing
+                }, pauseBeforeBackspace); // Wait before erasing
+            }
         } else {
-            setTimeout(() => {
-                typingText.textContent = ''; // Clear the text after it finishes
-                index = 0; // Reset index
-                typeText(); // Restart the typing effect
-            }, speed * 10); // Delay before restarting the typing
+            // Backspacing phase
+            if (index > 0) {
+                typingText.textContent = text.substring(0, index - 1); // Remove one character at a time
+                index--;
+                setTimeout(typeAndErase, backspaceSpeed);
+            } else {
+                // Once erasing is finished, pause, then switch back to typing
+                isTyping = true;
+                setTimeout(typeAndErase, pauseBeforeTypingAgain); // Start typing again after a short pause
+            }
         }
     }
 
-    // Delay before starting the typing effect to allow cursor to blink first
-    setTimeout(typeText, cursorSpeed * 2); // Adjust the timing as needed
+    // Start typing the text initially
+    setTimeout(typeAndErase, typingSpeed);
 });
-
